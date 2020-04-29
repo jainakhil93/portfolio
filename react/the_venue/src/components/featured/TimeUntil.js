@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 
 class TimeUntil extends Component {
   state = {
-    deadline: "Dec, 16, 2020",
+    deadline: "Aug, 07, 2020",
     days: "0",
     hours: "0",
     minutes: "0",
