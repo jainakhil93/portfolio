@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
+import { CityLogo } from '../UI/icons';
 import { Link } from 'react-router-dom';
 
 class Header extends Component {
@@ -16,10 +17,15 @@ class Header extends Component {
                     borderBottom:'2px solid #00285e'
                 }} 
             >
-                <Toolbar styles={{display:'flex'}}>
+                <Toolbar style={{display:'flex'}}>
                     <div style={{flexGrow:1}}>
                         <div className="header_logo">
-                            Logo
+                            <CityLogo 
+                                link={true}
+                                linkTo = '/'
+                                width = "70px"
+                                height = "70px"
+                            />
                         </div>
                     </div>
                     <Link to='/the_team'>
